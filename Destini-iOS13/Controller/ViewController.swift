@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     // Variable to keep track of the user's position in the story.
     var userPosition: Int = 0
 
-   
-
 
     func showToast(message : String) {
         // Creating a UILabel for the toast.
@@ -55,16 +53,7 @@ class ViewController: UIViewController {
         self.present(gameOverVC, animated: true, completion: nil)
     }
 
-    // Dictionary mapping the user's position to the next steps in the story.
-    var storyMap: [Int: [Int]] = [
-        0: [1, 2],
-        1: [3, 4],
-        2: [5, 6],
-        3: [7, 8],
-        4: [9, 10],
-        5: [11, 12]
-    ]
-
+   
     // Function to update the user interface.
     func updateUI() {
         // Check if the user position is within the story array.

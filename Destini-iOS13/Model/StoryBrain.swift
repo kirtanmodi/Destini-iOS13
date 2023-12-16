@@ -16,3 +16,13 @@ import Foundation
         Story(title: "You come across a river.", choice1: "Build a raft.", choice2: "Swim across."),
         Story(title: "You see a castle in the distance.", choice1: "Approach the castle.", choice2: "Continue on your path.")
     ]
+
+     // Dictionary mapping the user's position to the next steps in the story.
+    var storyMap: [Int: [Int]] = [
+        0: [1, 2],
+        1: [3, 4],
+        2: [5, 6],
+        3: [7, 8],
+        4: [9, 10],
+        5: [11, 12]
+    ]
